@@ -5,11 +5,11 @@
 En JavaScript, hay principalmente tres tipos de bucles que se utilizan para iterar sobre una serie de elementos o realizar tareas repetitivas:
 los bucles **for**, **while** y **do-while.** 
 
-Además, es importante tener en cuenta que los hay **bucles infinitos**, como el ejemplo del bucle **while (true)**, también son posibles en JavaScript, pero deben utilizarse con precaución para evitar bloqueos o comportamientos no deseados en el programa."
+Además, es importante tener en cuenta que hay **bucles infinitos**, como el ejemplo del bucle **while (true)**, éstos también son posibles en JavaScript, pero deben utilizarse con precaución para evitar bloqueos o comportamientos no deseados en el programa."
 
 * **Bucle for**
 
-    El bucle for se utiliza cuando se conoce la cantidad exacta de iteraciones que se deben realizar. Tiene tres partes: la inicialización, la condición y la expresión de iteración. Veamos un ejemplo:
+    El bucle **for** se utiliza cuando se conoce la cantidad exacta de iteraciones que se deben realizar. Tiene tres partes: la inicialización, la condición y la expresión de iteración. Veamos un ejemplo:
 
     ```
     for (let i = 0; i < 5; i++) {
@@ -22,7 +22,7 @@ Además, es importante tener en cuenta que los hay **bucles infinitos**, como el
     En este ejemplo, el **bucle for** imprimirá los números del 0 al 4. La inicialización **let i = 0** establece el contador en 0. La condición **i < 5** especifica que el bucle continuará mientras **i** sea menor que 5. La expresión de iteración **i++** aumenta el valor de **i** en cada iteración.
  ***
  * **Bucle while**
-    El bucle while se utiliza cuando no se conoce la cantidad exacta de iteraciones que se deben realizar, pero se conoce la condición de finalización del bucle. Veamos un ejemplo:
+    El bucle **while** se utiliza cuando no se conoce la cantidad exacta de iteraciones que se deben realizar, pero se conoce la condición de finalización del bucle. Veamos un ejemplo:
 
     ```
     let i = 0;
@@ -37,7 +37,7 @@ Además, es importante tener en cuenta que los hay **bucles infinitos**, como el
 
 * **Bucle do-while**
 
-    El bucle do-while es similar al bucle while, pero la diferencia es que la condición se verifica al final del bucle, lo que significa que el cuerpo del bucle se ejecutará al menos una vez antes de verificar la condición. Veamos un ejemplo:
+    El bucle **do-while** es similar al bucle **while**, pero la diferencia es que la condición se verifica al final del bucle, lo que significa que el cuerpo del bucle se ejecutará al menos una vez antes de verificar la condición. Veamos un ejemplo:
 
     ```
     let i = 0;
@@ -48,7 +48,7 @@ Además, es importante tener en cuenta que los hay **bucles infinitos**, como el
     ```
     ![Alt text](images/code3.png)
 
-    En este ejemplo, el **bucle do-while** también imprimirá los números del 0 al 4. La diferencia clave es que la expresión **do++ se ejecuta al menos una vez antes de verificar la condición en while.
+    En este ejemplo, el **bucle do-while** también imprimirá los números del 0 al 4. La diferencia clave es que la expresión **do** se ejecuta al menos una vez antes de verificar la condición en **while**.
 
  * **Bucles infinitos**
 
@@ -63,18 +63,18 @@ Además, es importante tener en cuenta que los hay **bucles infinitos**, como el
     ```
     ![Alt text](images/code4.png)
 
-    Este bucle while se ejecutará infinitamente, ya que la condición **true** siempre es verdadera. Es importante evitar los bucles infinitos en tu código, ya que pueden causar que el programa se bloquee o se vuelva irresponsivo. 
+    Este bucle **while** se ejecutará infinitamente, ya que la condición **true** siempre es verdadera. Es importante evitar los bucles infinitos en tu código, ya que pueden causar que el programa se bloquee o se vuelva irresponsivo. 
     
     Sin embargo, hay algunas situaciones muy específicas en las que un **bucle infinito** puede ser útil o incluso necesario:
 
-    1. **Aplicaciones en tiempo real**: En algunas aplicaciones en tiempo real, como videojuegos o sistemas de control, puede ser necesario ejecutar un bucle infinito para mantener el programa funcionando continuamente, esperando la entrada del usuario o eventos del sistema.
-    2. **Servidores y servicios**: En servidores y servicios, como los servidores web o los servidores de aplicaciones, es común tener bucles infinitos que escuchan constantemente las solicitudes de los clientes y manejan las conexiones entrantes.
-    3. **Tareas de fondo**: En algunas aplicaciones, puede haber tareas de fondo que necesitan ejecutarse de forma continua, como la actualización de datos en una base de datos o la supervisión de un sistema.
-    4. **Bucles de eventos**: En entornos de interfaz de usuario (UI), como aplicaciones web o aplicaciones de escritorio, los bucles de eventos pueden ser esenciales para detectar y responder a eventos del usuario, como clics de ratón o pulsaciones de teclas.
+    * **Aplicaciones en tiempo real**: En algunas aplicaciones en tiempo real, como videojuegos o sistemas de control, puede ser necesario ejecutar un bucle infinito para mantener el programa funcionando continuamente, esperando la entrada del usuario o eventos del sistema.
+    * **Servidores y servicios**: En servidores y servicios, como los servidores web o los servidores de aplicaciones, es común tener bucles infinitos que escuchan constantemente las solicitudes de los clientes y manejan las conexiones entrantes.
+    * **Tareas de fondo**: En algunas aplicaciones, puede haber tareas de fondo que necesitan ejecutarse de forma continua, como la actualización de datos en una base de datos o la supervisión de un sistema.
+    * **Bucles de eventos**: En entornos de interfaz de usuario (UI), como aplicaciones web o aplicaciones de escritorio, los bucles de eventos pueden ser esenciales para detectar y responder a eventos del usuario, como clics de ratón o pulsaciones de teclas.
       
 ## 2. ¿Cuáles son las diferencias entre const, let y var?
 
-Las diferencias entre const, let y var en JavaScript son principalmente en términos de alcance, reasignación y hoisting. A continuación, explicaré cada uno de estos conceptos y proporcionaré ejemplos para cada declaración de variable. El uso adecuado de const, let y var es crucial para escribir código limpio y mantenible en JavaScript. Al elegir entre ellos, es importante considerar el alcance y la mutabilidad de las variables en tu programa.
+Las diferencias entre **const**, **let** y **var** en JavaScript son principalmente en términos de alcance, reasignación y hoisting. A continuación, explicaré cada uno de estos conceptos y proporcionaré ejemplos para cada declaración de variable. El uso adecuado de **const**, **let** y **var** es crucial para escribir código limpio y mantenible en JavaScript. Al elegir entre ellos, es importante considerar el alcance y la mutabilidad de las variables en tu programa.
 
 * **var**
 
@@ -82,7 +82,7 @@ Las diferencias entre const, let y var en JavaScript son principalmente en térm
 
     Las variables **var** pueden ser redeclaradas y reasignadas.
 
-    Las variables **var** son elevadas (hoisted) al principio de su ámbito, lo que significa que se pueden usar antes de su declaración. Aunque **var** aún es compatible y funciona en JavaScript, su uso se ha vuelto menos común debido a sus comportamientos impredecibles, como el hoisting y el alcance de función. Por lo tanto, es recomendable evitar **var** en favor de *+const*+ y **let*+, ya que proporcionan un comportamiento más predecible y seguro en la mayoría de los casos.
+    Las variables **var** son elevadas (hoisted) al principio de su ámbito, lo que significa que se pueden usar antes de su declaración. Aunque **var** aún es compatible y funciona en JavaScript, su uso se ha vuelto menos común debido a sus comportamientos impredecibles, como el hoisting y el alcance de función. Por lo tanto, es recomendable evitar **var** en favor de **const** y **let**, ya que proporcionan un comportamiento más predecible y seguro en la mayoría de los casos.
     Veamos un ejemplo:
 
     ```
@@ -101,15 +101,15 @@ Las diferencias entre const, let y var en JavaScript son principalmente en térm
 
     Primero, se declara una variable **'x'** con el valor 10 fuera de la función foo. Esta variable  **'x'** tiene un alcance global en todo el script.
 
-    Luego, se define una función llamada foo, dentro de la cual se declara una variable y con el valor 20. Esta variable **'y'** tiene un alcance local dentro de la función foo.
+    Luego, se define una función llamada **foo**, dentro de la cual se declara una variable y con el valor 20. Esta variable **'y'** tiene un alcance local dentro de la función **foo**.
 
-    Se llama a la función foo, y dentro de ella se imprime el valor de las variables **'x'** e **'y'**.
+    Se llama a la función **foo**, y dentro de ella se imprime el valor de las variables **'x'** e **'y'**.
 
-    Como **'x'**  es una variable global, se puede acceder a su valor desde cualquier parte del script, incluida la función foo. Además, como **'y'** es una variable local dentro de la función foo, solo se puede acceder a su valor dentro de la función.
+    Como **'x'**  es una variable global, se puede acceder a su valor desde cualquier parte del script, incluida la función **foo**. Además, como **'y'** es una variable local dentro de la función **foo**, solo se puede acceder a su valor dentro de la función.
 
-    Finalmente, se intenta imprimir el valor de la variable y fuera de la función foo.
+    Finalmente, se intenta imprimir el valor de la variable y fuera de la función **foo**.
 
-    Como se esperaba, al intentar acceder a la variable y fuera de la función foo, se produce un error porque **'y'** solo está definida dentro del ámbito de la función foo. Esto demuestra cómo funciona el alcance de las variables en JavaScript: las variables globales pueden ser accedidas desde cualquier parte del script, mientras que las variables locales solo pueden ser accedidas desde dentro de la función en la que se declaran.
+    Como se esperaba, al intentar acceder a la variable y fuera de la función **foo**, se produce un error porque **'y'** solo está definida dentro del ámbito de la función **foo**. Esto demuestra cómo funciona el alcance de las variables en JavaScript: las variables globales pueden ser accedidas desde cualquier parte del script, mientras que las variables locales solo pueden ser accedidas desde dentro de la función en la que se declaran.
 
 * **let**
 
@@ -133,24 +133,24 @@ Las diferencias entre const, let y var en JavaScript son principalmente en térm
     ```
     ![Alt text](images/code6.png)
 
-    Primero, se declara una variable **'x'** con el valor 10 fuera del bloque if. Esta variable **'x'** tiene un alcance global en todo el script.
+    Primero, se declara una variable **'x'** con el valor 10 fuera del bloque **if**. Esta variable **'x'** tiene un alcance global en todo el script.
 
-    Luego, dentro del bloque if, se declara una variable **'y'** con el valor 20. Esta variable **'y'** tiene un alcance local dentro del bloque if.
+    Luego, dentro del bloque **if**, se declara una variable **'y'** con el valor 20. Esta variable **'y'** tiene un alcance local dentro del bloque **if**.
 
-    Como **'x'** es una variable global, se puede acceder a su valor desde cualquier parte del script, incluido el bloque if. Además, como **'y'** es una variable local dentro del bloque if, solo se puede acceder a su valor dentro de ese bloque.
+    Como **'x'** es una variable global, se puede acceder a su valor desde cualquier parte del script, incluido el bloque **if**. Además, como **'y'** es una variable local dentro del bloque **if**, solo se puede acceder a su valor dentro de ese bloque.
 
-    Se imprime el valor de las variables **'x'** e **'y'** dentro del bloque if.
+    Se imprime el valor de las variables **'x'** e **'y'** dentro del bloque **if**.
 
-    Después del bloque if, se intenta imprimir el valor de la variable **'y'**.
+    Después del bloque **if**, se intenta imprimir el valor de la variable **'y'**.
 
-    Como se esperaba, al intentar acceder a la variable **'y'** fuera del bloque if, se produce un error porque **'y'** solo está definida dentro de ese bloque. Esto demuestra cómo funciona el alcance de las variables declaradas con **let**: 
+    Como se esperaba, al intentar acceder a la variable **'y'** fuera del bloque **if**, se produce un error porque **'y'** solo está definida dentro de ese bloque. Esto demuestra cómo funciona el alcance de las variables declaradas con **let**: 
     Tienen un alcance de bloque, lo que significa que solo son accesibles dentro del bloque en el que se declaran y no fuera de él.
 
 * **const**
 
     **const** también se introdujo en ES6 y se utiliza para declarar constantes, es decir, variables cuyo valor no puede ser reasignado.
 
-    Las variables declaradas con **const** tienen un alcance de bloque al igual que let.
+    Las variables declaradas con **const** tienen un alcance de bloque al igual que **let**.
 
     Una vez que se asigna un valor a una variable **const**, no se puede reasignar.
 
@@ -251,17 +251,17 @@ A continuación, detallo algunas características y ejemplos de funciones de fle
 
     Luego, creamos el objeto **perro** que tiene una propiedad **sonido** con el valor **'Woof'**.
 
-    Sin embargo, tiene un método **dice** definido con una función de flecha (() => { ... }). 
+    Sin embargo, tiene un método **dice** definido con una función de flecha **(() => { ... })**. 
     
     Esto es lo que marca la diferencia con el objeto **gato**.
-    La función de flecha **dice** utiliza **this.sonido** para acceder al valor de la propiedad sonido del objeto perro.
+    La función de flecha **dice** utiliza **this.sonido** para acceder al valor de la propiedad **sonido** del objeto **perro**.
 
     Cuando se llama al método **dice** en cada objeto:
 
-    **gato.dice()** imprimirá "Soy un gato y digo Meow". 
+    **gato.dice()** imprimirá **"Soy un gato y digo Meow"**. 
     Esto funciona correctamente porque **this.sonido** dentro del método **dice** hace referencia al objeto **gato**, y accede correctamente a su propiedad **sonido**.
 
-    **perro.dice()** imprimirá "Soy un perro y digo undefined". 
+    **perro.dice()** imprimirá **"Soy un perro y digo undefined"**. 
     Esto ocurre porque las funciones de flecha no tienen su propio valor **this**, sino que heredan el valor **this** del contexto en el que fueron definidas. 
     
     En este caso, al ser una función de flecha definida en el ámbito global (el contexto de ejecución en el que se definió el objeto **perro**), **this** hace referencia al objeto global, donde **sonido** no está definido, por lo que imprime **undefined**.
@@ -386,13 +386,13 @@ La deconstrucción de variables en JavaScript es una característica que permite
 
 Esto es útil cuando se trabaja con estructuras de datos complejas como arrays y objetos, ya que permite acceder a sus elementos de forma más directa.
 
-La deconstrucción de variables se realiza utilizando la sintaxis de corchetes [] para arrays y la sintaxis de llaves {} para objetos. Se puede realizar tanto en la declaración de variables como en la asignación de valores a las mismas.
+La deconstrucción de variables se realiza utilizando la sintaxis de corchetes **[ ]** para arrays y la sintaxis de llaves **{ }** para objetos. Se puede realizar tanto en la declaración de variables como en la asignación de valores a las mismas.
 
 Veamos unos ejemplos:
 
 * **Deconstrucción de Arrays**
 
-    En la deconstrucción de un array, se utilizan corchetes [ ] para indicar que se está extrayendo valores de un array y se asignan a variables individuales en el mismo orden en que aparecen en el array.
+    En la deconstrucción de un array, se utilizan corchetes **[ ]** para indicar que se está extrayendo valores de un array y se asignan a variables individuales en el mismo orden en que aparecen en el array.
 
     ```
     const numbers = [1, 2, 3];
@@ -404,11 +404,11 @@ Veamos unos ejemplos:
     ```
     ![Alt text](images/code12.png)
 
-    En este ejemplo, los valores del array **numbers** se asignan a las variables a, b y c, respectivamente.
+    En este ejemplo, los valores del array **numbers** se asignan a las variables **a**, **b** y **c**, respectivamente.
 
 * **Deconstrucción de Objetos**
 
-    En la deconstrucción de un objeto, se utilizan llaves { } para indicar que se está extrayendo propiedades de un objeto y se asignan a variables con el mismo nombre que las propiedades.
+    En la deconstrucción de un objeto, se utilizan llaves **{ }** para indicar que se está extrayendo propiedades de un objeto y se asignan a variables con el mismo nombre que las propiedades.
 
     ```
     const person = { name: 'John', age: 30 };
@@ -419,7 +419,7 @@ Veamos unos ejemplos:
     ```
     ![Alt text](images/code13.png)
 
-    En este ejemplo, las propiedades **name** y **age** del objeto person se asignan a las variables del mismo nombre.
+    En este ejemplo, las propiedades **name** y **age** del objeto **person** se asignan a las variables del mismo nombre.
 
 * **Asignación de Nombres Personalizados**
 
@@ -460,7 +460,7 @@ La deconstrucción de variables es una característica muy útil en JavaScript q
 
 El operador de propagación o spread en JavaScript es una característica que se utiliza para descomponer arrays u objetos en elementos individuales. 
 
-Permite expandir una expresión en lugares donde se esperan múltiples argumentos o elementos. Este operador se representa mediante tres puntos suspensivos '...'
+Permite expandir una expresión en lugares donde se esperan múltiples argumentos o elementos. Este operador se representa mediante tres puntos suspensivos **...**
 
 Veamos unos ejemplos:
 
@@ -552,7 +552,7 @@ Veamos unos ejemplos:
 
         En este ejemplo, se tienen dos objetos **obj1** y **obj2**.
 
-        Usando el operador de spread *+...**, 
+        Usando el operador de spread **...**, 
         se fusionan las propiedades de ambos objetos en un nuevo objeto **newObj**.
 
         Al imprimir **newObj**, se muestra **{ x: 1, y: 2, z: 3 }**, lo que indica que los objetos se han fusionado correctamente.
@@ -578,11 +578,11 @@ En resumen, el operador de spread **...** es una herramienta muy útil en JavaSc
 
 ## 6. ¿Qué es la programación orientada a objetos?
 
-La programación orientada a objetos (OOP) en JavaScript es un paradigma de programación que se basa en el concepto de "objetos". 
+La programación orientada a objetos **(OOP)** en JavaScript es un paradigma de programación que se basa en el concepto de "objetos". 
 
 Los objetos son entidades que combinan datos (propiedades) y comportamientos (métodos) relacionados. 
 
-La OOP se centra en modelar el mundo real en forma de objetos y permite organizar el código de manera más estructurada, modular y reutilizable.
+La **OOP** se centra en modelar el mundo real en forma de objetos y permite organizar el código de manera más estructurada, modular y reutilizable.
 
 * **Principios de la POO en JavaScript**
 
@@ -600,7 +600,7 @@ La OOP se centra en modelar el mundo real en forma de objetos y permite organiza
 
 * **Ejemplo de Programación Orientada a Objetos:**
 
-    Supongamos que queremos modelar un sistema de gestión de empleados. Podríamos crear una clase Empleado que represente a cada empleado:
+    Supongamos que queremos modelar un sistema de gestión de empleados. Podríamos crear una **clase Empleado** que represente a cada empleado:
 
 
     ```
@@ -633,7 +633,7 @@ La OOP se centra en modelar el mundo real en forma de objetos y permite organiza
 
     Aquí, **empleado1** y **empleado2** son objetos de la clase **Empleado**, cada uno con su propio nombre y salario. Podemos llamar a los métodos de estos objetos para realizar acciones específicas, como trabajar o obtener el salario.
 
-Este es solo un ejemplo básico de cómo se puede aplicar la programación orientada a objetos en JavaScript. La OOP proporciona un enfoque organizado y modular para el desarrollo de software, lo que facilita la creación, mantenimiento y escalabilidad de aplicaciones.
+Este es solo un ejemplo básico de cómo se puede aplicar la programación orientada a objetos en JavaScript. La **OOP** proporciona un enfoque organizado y modular para el desarrollo de software, lo que facilita la creación, mantenimiento y escalabilidad de aplicaciones.
 
 
 ## 7. ¿Qué es una promesa en JS?
