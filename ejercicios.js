@@ -1,4 +1,4 @@
-// Ejercicio 1. Cree un bucle for en JS que imprima cada nombre de esta lista. myList = ["velma", "scout", "jane", "john", "harry"]
+// Ejercicio 1. Cree un bucle for en JS que imprima cada nombre de esta lista. myList = ["velma", "exploradora", "jane", "john", "harry"]
 const myList = ["velma", "exploradora", "jane", "john", "harry"];
 
 for (let i = 0; i < myList.length; i++) {
