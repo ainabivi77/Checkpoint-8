@@ -34,7 +34,7 @@ Además, es importante tener en cuenta que hay **bucles infinitos**, como el eje
     ![Alt text](images/code2.png)
 
     En este ejemplo, el **bucle while** también imprimirá los números del 0 al 4. Mientras que **i** sea menor que 5, el bucle seguirá ejecutándose. La variable **i** se incrementa en cada iteración dentro del bucle.
-
+***
 * **Bucle do-while**
 
     El bucle **do-while** es similar al bucle **while**, pero la diferencia es que la condición se verifica al final del bucle, lo que significa que el cuerpo del bucle se ejecutará al menos una vez antes de verificar la condición. Veamos un ejemplo:
@@ -49,7 +49,7 @@ Además, es importante tener en cuenta que hay **bucles infinitos**, como el eje
     ![Alt text](images/code3.png)
 
     En este ejemplo, el **bucle do-while** también imprimirá los números del 0 al 4. La diferencia clave es que la expresión **do** se ejecuta al menos una vez antes de verificar la condición en **while**.
-
+ ***
  * **Bucles infinitos**
 
     Aunque no es recomendable, los **bucles infinitos** son posibles en JavaScript y pueden ser útiles en ciertas situaciones. Sin embargo, debes tener cuidado de evitarlos, ya que pueden hacer que tu programa se bloquee. Veamos un ejemplo:
@@ -64,14 +64,15 @@ Además, es importante tener en cuenta que hay **bucles infinitos**, como el eje
     ![Alt text](images/code4.png)
 
     Este bucle **while** se ejecutará infinitamente, ya que la condición **true** siempre es verdadera. Es importante evitar los bucles infinitos en tu código, ya que pueden causar que el programa se bloquee o se vuelva irresponsivo. 
-    
+    ***
     Sin embargo, hay algunas situaciones muy específicas en las que un **bucle infinito** puede ser útil o incluso necesario:
 
     * **Aplicaciones en tiempo real**: En algunas aplicaciones en tiempo real, como videojuegos o sistemas de control, puede ser necesario ejecutar un bucle infinito para mantener el programa funcionando continuamente, esperando la entrada del usuario o eventos del sistema.
     * **Servidores y servicios**: En servidores y servicios, como los servidores web o los servidores de aplicaciones, es común tener bucles infinitos que escuchan constantemente las solicitudes de los clientes y manejan las conexiones entrantes.
     * **Tareas de fondo**: En algunas aplicaciones, puede haber tareas de fondo que necesitan ejecutarse de forma continua, como la actualización de datos en una base de datos o la supervisión de un sistema.
     * **Bucles de eventos**: En entornos de interfaz de usuario (UI), como aplicaciones web o aplicaciones de escritorio, los bucles de eventos pueden ser esenciales para detectar y responder a eventos del usuario, como clics de ratón o pulsaciones de teclas.
-      
+
+***      
 ## 2. ¿Cuáles son las diferencias entre const, let y var?
 
 Las diferencias entre **const**, **let** y **var** en JavaScript son principalmente en términos de alcance, reasignación y hoisting. A continuación, explicaré cada uno de estos conceptos y proporcionaré ejemplos para cada declaración de variable. El uso adecuado de **const**, **let** y **var** es crucial para escribir código limpio y mantenible en JavaScript. Al elegir entre ellos, es importante considerar el alcance y la mutabilidad de las variables en tu programa.
@@ -110,7 +111,7 @@ Las diferencias entre **const**, **let** y **var** en JavaScript son principalme
     Finalmente, se intenta imprimir el valor de la variable y fuera de la función **foo**.
 
     Como se esperaba, al intentar acceder a la variable y fuera de la función **foo**, se produce un error porque **'y'** solo está definida dentro del ámbito de la función **foo**. Esto demuestra cómo funciona el alcance de las variables en JavaScript: las variables globales pueden ser accedidas desde cualquier parte del script, mientras que las variables locales solo pueden ser accedidas desde dentro de la función en la que se declaran.
-
+***
 * **let**
 
     **let** se introdujo en ES6 (ECMAScript 2015) como una forma mejorada de declarar variables en comparación con **var**.
@@ -145,7 +146,7 @@ Las diferencias entre **const**, **let** y **var** en JavaScript son principalme
 
     Como se esperaba, al intentar acceder a la variable **'y'** fuera del bloque **if**, se produce un error porque **'y'** solo está definida dentro de ese bloque. Esto demuestra cómo funciona el alcance de las variables declaradas con **let**: 
     Tienen un alcance de bloque, lo que significa que solo son accesibles dentro del bloque en el que se declaran y no fuera de él.
-
+***
 * **const**
 
     **const** también se introdujo en ES6 y se utiliza para declarar constantes, es decir, variables cuyo valor no puede ser reasignado.
@@ -183,7 +184,7 @@ Es recomendable utilizar **const** siempre que sea posible para declarar variabl
 
 El uso de **var** se ha vuelto menos común en favor de **let** y **const** debido a sus comportamientos más predecibles y seguros.
 
-
+***
 ## 3. ¿Qué es una función de flecha?
 
 Una función de flecha, también conocida como función flecha o arrow function en inglés, es una característica introducida en ECMAScript 6 (también conocido como ES6 o ECMAScript 2015) que proporciona una sintaxis más concisa y una manera más clara de escribir funciones en JavaScript. Las funciones de flecha tienen algunas diferencias clave en comparación con las funciones tradicionales, y se utilizan comúnmente en el desarrollo moderno de JavaScript debido a su claridad y conveniencia.
@@ -217,7 +218,7 @@ A continuación, detallo algunas características y ejemplos de funciones de fle
 
     Imprimen un mensaje en la consola. La diferencia radica en la sintaxis utilizada para definir las funciones, donde la función de flecha proporciona una sintaxis más concisa y legible.
 
-
+***
 * **this léxico:**
 
     Una de las diferencias clave entre las funciones de flecha y las funciones tradicionales es cómo manejan el valor de **this**. Las funciones de flecha no tienen su propio valor **this**, sino que heredan el valor this del ámbito en el que están definidas. Veamos un ejemplo:
@@ -265,7 +266,7 @@ A continuación, detallo algunas características y ejemplos de funciones de fle
     Esto ocurre porque las funciones de flecha no tienen su propio valor **this**, sino que heredan el valor **this** del contexto en el que fueron definidas. 
     
     En este caso, al ser una función de flecha definida en el ámbito global (el contexto de ejecución en el que se definió el objeto **perro**), **this** hace referencia al objeto global, donde **sonido** no está definido, por lo que imprime **undefined**.
-
+***
 * **Uso en funciones de flecha con un solo argumento:**
 
     ```
@@ -321,6 +322,7 @@ A continuación, detallo algunas características y ejemplos de funciones de fle
 
 En resumen, este ejercicio demuestra cómo definir y utilizar funciones tradicionales y de flecha para realizar la misma operación matemática, en este caso, calcular el cuadrado de un número. Luego, muestra cómo imprimir los resultados en la consola para ver el efecto de ambas funciones en los mismos conjuntos de datos de entrada.
 
+***
 * **Uso en funciones de flecha sin argumentos:**
 
     ```
@@ -355,7 +357,7 @@ En resumen, este ejercicio demuestra cómo definir y utilizar funciones tradicio
 
     Por último se llaman a ambas funciones utilizando saludo() y saludoArrow(), lo que resulta en la impresión de "Hola" en la consola en ambos casos.
 
-
+***
 * **No pueden ser utilizadas como constructores:**    
 
     No pueden ser invocadas con el operador new para crear un nuevo objeto. Si intentas hacerlo, generará un error en tiempo de ejecución. Veamos un ejemplo:
@@ -379,7 +381,7 @@ En resumen, este ejercicio demuestra cómo definir y utilizar funciones tradicio
 
 En resumen, las funciones de flecha son una característica poderosa y útil en JavaScript que proporciona una sintaxis más concisa, una forma más clara de manejar el valor this, y una manera más elegante de escribir funciones en el desarrollo moderno de JavaScript.
 
-
+***
 ## 4. ¿Qué es la deconstrucción variable?
 
 La deconstrucción de variables en JavaScript es una característica que permite extraer valores de arrays o propiedades de objetos y asignarlos a variables individuales de una manera más concisa y legible. 
@@ -405,7 +407,7 @@ Veamos unos ejemplos:
     ![Alt text](images/code12.png)
 
     En este ejemplo, los valores del array **numbers** se asignan a las variables **a**, **b** y **c**, respectivamente.
-
+***
 * **Deconstrucción de Objetos**
 
     En la deconstrucción de un objeto, se utilizan llaves **{ }** para indicar que se está extrayendo propiedades de un objeto y se asignan a variables con el mismo nombre que las propiedades.
@@ -420,7 +422,7 @@ Veamos unos ejemplos:
     ![Alt text](images/code13.png)
 
     En este ejemplo, las propiedades **name** y **age** del objeto **person** se asignan a las variables del mismo nombre.
-
+***
 * **Asignación de Nombres Personalizados**
 
     También es posible asignar nombres personalizados a las variables durante la deconstrucción, utilizando la sintaxis nombreOriginal: nombrePersonalizado.
@@ -436,7 +438,7 @@ Veamos unos ejemplos:
     ![Alt text](images/code14.png)
 
     En este ejemplo, las propiedades **name** y **age** se asignan a las variables **fullName** y **years**, respectivamente.
-
+***
 * **Deconstrucción en Funciones**
 
     La deconstrucción de variables también se puede utilizar en funciones para extraer valores de objetos pasados como argumentos.
@@ -455,7 +457,7 @@ Veamos unos ejemplos:
 
 
 La deconstrucción de variables es una característica muy útil en JavaScript que facilita el trabajo con arrays y objetos al proporcionar una forma más elegante y expresiva de acceder a sus elementos y propiedades.
-
+***
 ## 5. ¿Qué hace el operador de extensión en JS?
 
 El operador de propagación o spread en JavaScript es una característica que se utiliza para descomponer arrays u objetos en elementos individuales. 
@@ -520,7 +522,7 @@ Veamos unos ejemplos:
        Usando el operador de spread **...**, los elementos del array **numbers** se pasan como argumentos a la función **sum**.
 
        Al imprimir **result**, se muestra **6**, que es la suma de los elementos del array.
-
+***
 * **Para Objetos:**
 
     * **Copiar un Objeto**
@@ -575,7 +577,7 @@ Veamos unos ejemplos:
         Al imprimir **newObj**, se muestra **{ x: 1, y: 2, z: 3 }**, lo que indica que la nueva propiedad se ha agregado correctamente.
 
 En resumen, el operador de spread **...** es una herramienta muy útil en JavaScript para copiar, unir y trabajar con arrays y objetos de una manera más conveniente y eficiente.
-
+***
 ## 6. ¿Qué es la programación orientada a objetos?
 
 La programación orientada a objetos **(OOP)** en JavaScript es un paradigma de programación que se basa en el concepto de "objetos". 
@@ -597,7 +599,7 @@ La **OOP** se centra en modelar el mundo real en forma de objetos y permite orga
      * **Polimorfismo:** 
         Se refiere a la capacidad de los objetos para responder de manera diferente a la misma invocación de método. Esto permite que diferentes objetos compartan el mismo nombre de método pero lo implementen de manera diferente. En JavaScript, el polimorfismo se puede lograr mediante la implementación de métodos con el mismo nombre en diferentes objetos.      
 
-
+***
 * **Ejemplo de Programación Orientada a Objetos:**
 
     Supongamos que queremos modelar un sistema de gestión de empleados. Podríamos crear una **clase Empleado** que represente a cada empleado:
@@ -635,7 +637,7 @@ La **OOP** se centra en modelar el mundo real en forma de objetos y permite orga
 
 Este es solo un ejemplo básico de cómo se puede aplicar la programación orientada a objetos en JavaScript. La **OOP** proporciona un enfoque organizado y modular para el desarrollo de software, lo que facilita la creación, mantenimiento y escalabilidad de aplicaciones.
 
-
+***
 ## 7. ¿Qué es una promesa en JS?
  
  Una promesa en JavaScript es un objeto que representa la finalización (o falla) eventual de una operación asíncrona y su resultado asociado. 
@@ -657,7 +659,7 @@ Este es solo un ejemplo básico de cómo se puede aplicar la programación orien
     * **Callbacks:**
 
         Las promesas pueden encadenarse mediante métodos **.then()** y **.catch()**, que se ejecutan cuando la promesa se resuelve o se rechaza, respectivamente.
-
+***
 * **Características Adicionales de las Promesas**
 
     * **Encadenamiento:**
@@ -686,7 +688,7 @@ Este es solo un ejemplo básico de cómo se puede aplicar la programación orien
 
 Estos puntos adicionales resaltan la utilidad y flexibilidad de las promesas en JavaScript, así como sus diversas capacidades para manejar operaciones asíncronas de manera efectiva y elegante.
 
-
+***
  * **Ejemplo de Promesa:**
 
      Supongamos que queremos cargar datos de un servidor de manera asíncrona. Podemos usar una promesa para manejar esta operación:
@@ -726,13 +728,13 @@ Estos puntos adicionales resaltan la utilidad y flexibilidad de las promesas en 
     Ahora podemos consumir esta promesa usando el método **.then()** para manejar el caso de éxito y **.catch()** para manejar el caso de error:
 
     El método **.then()** se ejecuta cuando la promesa se resuelve exitosamente, y el método **.catch()** se ejecuta si la promesa es rechazada. Esto permite un manejo elegante y eficiente de operaciones asíncronas en JavaScript, mejorando la legibilidad y mantenibilidad del código.
-
+***
 ## 7. ¿Qué hacen async y await por nosotros?
 
 **async** y **await** son características introducidas en ECMAScript 2017 (ES8) que simplifican y mejoran el manejo de operaciones asíncronas en JavaScript. 
 
 Permiten escribir código asíncrono de manera más clara y legible, eliminando la necesidad de usar devoluciones de llamada (callbacks) o encadenamiento excesivo de promesas.
-
+***
 * **Funcionamiento de async y await:**
 
     * **async:** 
@@ -747,7 +749,7 @@ Permiten escribir código asíncrono de manera más clara y legible, eliminando 
         
         Permite que el código asíncrono se vea y se comporte como código síncrono, lo que facilita la escritura y comprensión del código.
 
-
+***
 * **Ejemplo de Uso:**
 
     Supongamos que queremos cargar datos de un servidor utilizando una función **fetch()** en JavaScript. 
@@ -813,29 +815,3 @@ Permiten escribir código asíncrono de manera más clara y legible, eliminando 
 
 
 En resumen, **async** y **await** son herramientas poderosas que hacen que el manejo de operaciones asíncronas en JavaScript sea más intuitivo, legible y fácil de mantener. Permiten escribir código asíncrono de manera similar al código síncrono, lo que mejora significativamente la experiencia de desarrollo en el lenguaje.
-
-
-
-
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-  
